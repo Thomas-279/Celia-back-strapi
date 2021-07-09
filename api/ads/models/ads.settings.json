@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ads",
+  "info": {
+    "name": "ads"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ads": {
+      "type": "json"
+    }
+  }
+}
