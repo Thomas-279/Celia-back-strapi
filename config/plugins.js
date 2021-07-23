@@ -3,9 +3,13 @@ module.exports = ({ env }) => ({
   upload: {
     provider: 'cloudinary',
     providerOptions: {
-      cloud_name: "https-thomasgarraut-netlify-app",
-      api_key: "855511623121229",
-      api_secret: "J-aJ1sPRW737BPICt_23HXBO60A",
+      cloud_name: env('CLOUDINARY_NAME'),
+      api_key: env('CLOUDINARY_KEY'),
+      api_secret: env('CLOUDINARY_SECRET'),
+    },
+    actionOptions: {
+      upload: {},
+      delete: {},
     },
   },
   // ...
